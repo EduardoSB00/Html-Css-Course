@@ -37,10 +37,16 @@
     padding: 0;
  }
 
- blockquote.featured{
-   order: -1;
-   flex: 1 0 auto;
+ #testimonials-section blockquote.featured {
+  order: -1;
+  flex: 1 0 auto;
+  background-color: black;
+  color: white;
+  margin-inline-end: 1rem;
+  font-weight: bold;
+  margin-inline-start: 1rem;
  }
+ 
 
  #testimonials-section h2{
    order: -2;
@@ -67,7 +73,7 @@
 
  nav {
    position: sticky;
-   inset-inline-start: 0;
+   top: 0;
    background-color: white;
    display: flex;
    justify-content: center;
@@ -95,6 +101,7 @@
  }
 
  #about-me-section aside{
+   text-align: center;
    order: 10;
  }
 
@@ -187,4 +194,71 @@
 
   .button:hover {
     background-color: rgba(247, 77, 101, 0.9);
+  }
+
+  :root {
+    --accent-color: rgba(247,77,101,0.9);
+  }
+  
+  .social-logo {
+    inline-size: 1rem;
+  }
+
+  #about-me-section footer {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+  #about-me-section footer a, #about-me-section footer a:visited, #about-me-section footer a:hover {
+    color: white;
+  }
+
+  .button:hover {
+    background-color: var(--accent-color);
+  }
+  
+  .label-standard, .resume-fieldset legend{
+    font-size: 0.87rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    main {
+      grid-template-columns: 25px 1fr 25px;
+    }
+    
+    #about-me-section {
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .my-picture {
+      margin-inline-end: 0;
+    }
+    
+    #portfolio-section {
+      grid-template: 1fr / 1fr 1fr;
+      grid-template-areas: "portfolio portfolio"
+                             "anchor img1";
+    }
+  }
+    
+  @media screen and (min-width: 1200px) {
+    main {
+      grid-template-columns:  1fr 900px 1fr;
+    }
+    
+    .full-bleed {
+      padding-inline: 15%;
+    }
+  }
+    
+  @media print {
+    #about-me-section {
+      background-color: white;
+      color: black;
+    }
+    
+    #contact-me-section {
+     display: none;
+    }
   }
