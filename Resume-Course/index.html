@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resume of Eduardo Sierra</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#intro-section">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#about-me-section">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#services-section">Services</a>
+                    </li>
+                    <li>
+                        <a href="#skills-section">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#work-section">Work</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio-section">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#testimonials-section">Testimonials</a>
+                    </li>
+                    <li>
+                        <a href="#address-section">Address</a>
+                    </li>
+                    <li>
+                        <a href="#contact-me-section">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>Resume</h1>
+
+            <section id="intro-section">
+                <h2>Eduardo Sierra</h2>      
+                <dl>
+                    <dt>Website</dt>
+                    <dd>
+                        <a href="www.google.com">google.com</a>
+                    </dd>
+                    <dt>Phone</dt>
+                    <dd>555-555-1111</dd>
+                    <dt>Twitter</dt>
+                    <dd>@eduardosierra</dd>
+                </dl>
+            </section>
+
+            <article id="about-me-section" class="full-bleed"> 
+                <header class="flex-header">
+                    <h2>About Me</h2>
+                </header>
+                <img class="my-picture"src="imgs/person.jpg" alt="Person">
+                <p>
+                    Hi Im Eduardo Sierra and Im <em>happy</em> to have you as a student in my courses. 
+                </p>
+                <aside class="motto"><p><small>Dont imitate! Understand!</small></p></aside>
+                <footer>
+                    Contact Me
+                </footer>
+            </article>
+
+            <section id="services-section">
+                <h2>Services</h2>
+                <ul>
+                    <li>Web Development</li>
+                    <li>App Development</li>
+                    <li>Training</li>
+                </ul>
+            </section>
+
+            <section id="skills-section">
+                <h2>Skills</h2>
+                <ul class="resume-list">
+                    <li>
+                        Html
+                        Markup your content with semantic HTML
+                    </li>
+                    <li>
+                        CSS
+                        Layout your content visually for multiple devices
+                    </li>
+                    <li>
+                        Javascript
+                        Make your content more interactive, and build web applications
+                    </li>
+                </ul>
+            </section>
+
+            <section id="work-section">
+                <h2>Work History</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Position</th>
+                            <th>Company</th>
+                            <th>Years</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ux/Ui Designer</td>
+                            <td>XYZ Corp</td>
+                            <td>3 years</td>
+                        </tr>
+                        <tr>
+                            <td>Web developer</td>
+                            <td>ABC Corp</td>
+                            <td>5 years</td>
+                        </tr>
+                        <tr>
+                            <td>Carpet Cleaner</td>
+                            <td>123 Inc.</td>
+                            <td>2 years</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total</td>
+                            <td>10</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <ol reversed class="resume-list basic-list">
+                    <li>
+                        Ux/Ui Designer
+                        XYZ Corp
+                        3 years
+                    </li>
+        
+                    <li>
+                        Web Developer
+                        ABC Corp
+                        5 years
+                    </li>
+        
+                    <li>
+                        Carpet Cleaner
+                        123 Inc.
+                        2 years
+                    </li>         
+                </ol>
+            </section>
+
+            <!--Needs Pictures-->
+
+            <section id="portfolio-section" class="full-bleed">
+                <h2>Portfolio</h2>
+                <img src="https://picsum.photos/200/300" class="anchor" alt="My image">
+                <img src="https://picsum.photos/104/200" alt="My image">
+                <img src="https://picsum.photos/107/250" alt="My image">
+                <img src="https://picsum.photos/300/170" alt="My image">
+                <img src="https://picsum.photos/306/150" alt="My image">
+                <img src="https://picsum.photos/179/175" alt="My image">
+                <img src="https://picsum.photos/258/120" alt="My image">
+
+            </section>
+
+            <section id="testimonials-section">
+                <h2 class="flex-header">Testimonials</h2>
+                <blockquote>
+                    <p>I love Eduardos courses!</p>
+                </blockquote>
+                <blockquote class="featured">
+                    <p>Eduardos courses <strong>helped me get a job.</strong></p>
+                </blockquote>
+            </section>
+
+            <section id="address-section">
+                <h2>Mailing Address</h2>
+                <address>
+                    111 Main St. <br/>
+                    Somewhere, NY 333333    
+                </address>
+            </section>
+
+            <section id="contact-me-section">
+                <h2>Contact Me</h2>
+                <form action="placeholder.html" method="post">
+                    <p class="field">
+                        <label for="name" class="label-standard">Name</label>
+                        <input type="text" id="name" name="name" required/>
+                    </p>
+                    <p class="field">
+                        <label for="email" class="label-standard">Email</label>
+                        <input type="email" id="email" name="email"/>
+                    </p>
+                    <p class="field">
+                        <label for="whycontacting" class="label-standard">Why Contacting</label>
+                        <select name="whycontacting" id="whycontacting">
+                            <option value="jobinterview">Job Interview</option>
+                            <option value="needcontractor">Need Contractor</option>
+                        </select>
+                    </p>
+                    <p class="field"> 
+                        <label for="comments" class="label-standard">Comments</label>
+                        <textarea name="comments" id="comments" rows="3"></textarea>
+                    </p>
+                    <fieldset class="resume-fieldset">
+                        <legend>Best Contact Time</legend>
+                        <p>
+                            <label for="contacttime1">Morning</label>
+                            <input type="radio" name="contacttime" id="contacttime1" value="Morning">
+                        </p>
+                        <p>
+                            <label for="contacttime2">Afternoon</label>
+                            <input type="radio" name="contacttime" id="contacttime2" value="Afternoon">
+                        </p>
+                        <p>
+                            <label for="contacttime3">Evening</label>
+                            <input type="radio" name="contacttime" id="contacttime3" value="Evening">
+                        </p>
+                        <p>
+                            <label for="asap">ASAP</label>
+                            <input type="checkbox" id="asap" name="asap">
+                        </p>
+                    </fieldset>
+
+                    <button type="submit" class="button">Send</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

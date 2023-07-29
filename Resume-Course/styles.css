@@ -1,0 +1,190 @@
+
+ * {
+    box-sizing: border-box;
+ }
+
+ body{
+    font-size: 16px;
+    display: grid;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+ }
+
+ main {
+    padding-block: 0;
+    margin-block: 0;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    row-gap: 20px;
+ }
+
+ main > * {
+  grid-column: 2;
+ }
+
+ #testimonials-section blockquote{
+    border: solid black 1px;
+    padding-inline: 0.5rem;
+    padding-block: 0;
+    margin-inline: 0;
+    margin-block: 0.5rem;
+ }
+
+ .resume-fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+ }
+
+ blockquote.featured{
+   order: -1;
+   flex: 1 0 auto;
+ }
+
+ #testimonials-section h2{
+   order: -2;
+ }
+
+ .resume-fieldset legend{
+    padding: 0;
+ }
+
+ nav ul{
+    z-index: 1;
+    background-color: white ;
+    display: flex;
+    flex-wrap: wrap; 
+    list-style: none;
+    justify-content: center;
+ }
+
+ nav ul li{
+   margin-inline: 0.25rem;
+   margin-block: 0;
+   line-height: 1.5rem;
+ }
+
+ nav {
+   position: sticky;
+   inset-inline-start: 0;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+ }
+
+ .label-standard {
+   display: block;
+   margin: 0.125rem;
+ }
+
+ .field{
+   margin-block-end: 1.25rem;
+ }
+
+ .my-picture{
+   max-width: 175px;
+   margin-inline-end: 10px;
+ }
+
+ #about-me-section{
+   background-color: black;
+   color: white;
+   display: flex;
+   flex-wrap: wrap; 
+ }
+
+ #about-me-section aside{
+   order: 10;
+ }
+
+ #testimonials-section{
+   display: flex;
+   flex-wrap: wrap; 
+   flex-direction: row-reverse;
+ }
+
+ .flex-header, .motto{
+   flex-basis: 100%;
+   flex-shrink: 0;
+ }
+
+ #portfolio-section{
+    display: grid;
+    grid-template: repeat(2,10rem) / repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: "portfolio anchor img1 img2 img3"
+                          "portfolio anchor img4 img5 img6";
+    align-items: end;
+    background-color: #f74d65;
+    padding-block: 10px;
+  }
+
+  #portfolio-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s;
+  }
+
+  #portfolio-section img:hover {
+    opacity: 0.7;
+  }
+
+  img.anchor{
+    grid-area: anchor;
+    align-self: start;
+  }
+
+  #portfolio-section h2 {
+    grid-area: portfolio;
+    align-self: start;
+    margin-block: 0;
+
+  }
+  
+  .full-bleed{
+    grid-column: 1 / span 3;
+    padding-inline: 2rem;
+    
+  }
+
+  h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    color: #3d3d3d;
+  }
+
+  #about-me-section h2{
+    color: white;
+  }
+
+  input, select, textarea {
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  h1 {
+    margin-block-end: 0;
+  }
+
+  h2 {
+    margin-block-end: 0.75rem;
+  }
+
+  .button {
+    background-color: black;
+    color: white;
+    font-family: 'Monserrat', sans-serif;
+    transition: background-color 0.5s;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    border-inline: none;
+    border-block: none;
+  }
+
+  .button:hover {
+    background-color: rgba(247, 77, 101, 0.9);
+  }
